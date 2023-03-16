@@ -11,3 +11,10 @@ ecs-explorer --help
   -region string
     	the AWS region (default "ap-southeast-2")
 ```
+
+## Building
+
+Static build:
+```sh
+CGO_ENABLED=0 go build -ldflags "-s -w"
+```
